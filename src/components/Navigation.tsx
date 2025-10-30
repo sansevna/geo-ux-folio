@@ -14,8 +14,11 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-bold bg-gradient-to-r from-accent-coral via-accent-cyan to-accent-emerald bg-clip-text text-transparent">
-            Portfolio
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-accent-coral via-accent-cyan to-accent-emerald flex items-center justify-center text-background font-bold text-sm">
+              AY
+            </div>
+            <span className="text-lg font-semibold">Alexandra Yasny</span>
           </div>
 
           {/* Desktop Menu */}
@@ -27,16 +30,22 @@ const Navigation = () => {
               Home
             </button>
             <button
+              onClick={() => scrollToSection("about")}
+              className="text-foreground hover:text-accent-cyan transition-colors"
+            >
+              About
+            </button>
+            <button
               onClick={() => scrollToSection("case-studies")}
               className="text-foreground hover:text-accent-cyan transition-colors"
             >
-              Case Studies
+              Portfolio
             </button>
             <button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => scrollToSection("skills")}
               className="text-foreground hover:text-accent-cyan transition-colors"
             >
-              Contact
+              Skills
             </button>
           </div>
 
@@ -60,16 +69,22 @@ const Navigation = () => {
               Home
             </button>
             <button
+              onClick={() => scrollToSection("about")}
+              className="text-left text-foreground hover:text-accent-cyan transition-colors"
+            >
+              About
+            </button>
+            <button
               onClick={() => scrollToSection("case-studies")}
               className="text-left text-foreground hover:text-accent-cyan transition-colors"
             >
-              Case Studies
+              Portfolio
             </button>
             <button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => scrollToSection("skills")}
               className="text-left text-foreground hover:text-accent-cyan transition-colors"
             >
-              Contact
+              Skills
             </button>
           </div>
         )}
