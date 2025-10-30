@@ -19,14 +19,14 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold">
-            Alexandra Yasny
+            <span className="block">UX/UI Designer &</span>
             <span className="block mt-2 bg-gradient-to-r from-accent-coral via-accent-cyan to-accent-emerald bg-clip-text text-transparent">
-              UX/UI Designer & Developer
+              Developer
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Transforming complex problems into elegant, user-centered design solutions
+            I create exceptional digital experiences through thoughtful design and clean code. Passionate about crafting user-centered solutions that make a difference.
           </p>
           
           <div className="flex items-center justify-center gap-4 pt-4">
@@ -34,8 +34,14 @@ const Hero = () => {
               href="#case-studies" 
               className="group inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-medium hover:shadow-hover transition-all hover:scale-105"
             >
-              View Case Studies
+              View my work
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a 
+              href="#resume" 
+              className="inline-flex items-center gap-2 px-8 py-4 bg-secondary text-secondary-foreground rounded-full font-medium hover:shadow-hover transition-all hover:scale-105"
+            >
+              Resume
             </a>
           </div>
         </div>
