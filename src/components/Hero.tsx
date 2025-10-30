@@ -19,9 +19,9 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold">
-            Crafting Digital
+            Alexandra Yasny
             <span className="block mt-2 bg-gradient-to-r from-accent-coral via-accent-cyan to-accent-emerald bg-clip-text text-transparent">
-              Experiences
+              UX/UI Designer & Developer
             </span>
           </h1>
           
